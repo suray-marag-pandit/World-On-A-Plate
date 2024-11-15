@@ -119,8 +119,7 @@
         "description": "Fried Pickles - Crispy dill pickles served with ranch dip",
         "price": 4.99
     },
-    {
-        [
+   
     {
         "serialNumber": 1,
         "category": "Main Course",
@@ -320,7 +319,7 @@
         "description": "Delhi - Chole Bhature: Spiced chickpea curry with fluffy fried bread",
         "price": 9.49
     },
-        [
+        
     {
         "serialNumber": 34,
         "category": "Dessert",
@@ -440,8 +439,7 @@
         "category": "Dessert",
         "description": "Punjab - Jalebi: Crispy deep-fried spirals soaked in syrup",
         "price": 4.99
-    }
-]
+    },
 
     {
         "serialNumber": 54,
@@ -455,7 +453,6 @@
         "description": "Ice Cream Sundae - Vanilla ice cream with chocolate syrup",
         "price": 4.75
     },
-[
     {
         "serialNumber": 56,
         "category": "Beverages",
@@ -515,7 +512,7 @@
         "category": "Beverages",
         "description": "Coconut Water: Freshly served coconut water, naturally refreshing and hydrating",
         "price": 2.99
-    }[
+    },
     {
         "serialNumber": 56,
         "category": "Beverages",
@@ -575,8 +572,8 @@
         "category": "Beverages",
         "description": "Coconut Water: Freshly served coconut water, naturally refreshing and hydrating",
         "price": 2.99
-    }
-        [
+    },
+        
     {
         "serialNumber": 56,
         "category": "Beverages",
@@ -666,5 +663,5 @@
         "category": "Beverages",
         "description": "Kashmiri Phirni: Rice pudding drink flavored with cardamom and saffron, chilled for a refreshing taste",
         "price": 4.99
-    },
+    }
 ]
