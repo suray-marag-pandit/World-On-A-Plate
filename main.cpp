@@ -38,7 +38,7 @@ class Menu {
     vector<MenuItem> items;
 public:
     void loadMenu(const string& filename);
-    void showMenu() const;
+    void showMenu(const string& category = "") const; // Updated to filter by category
     void addItem(const MenuItem& item);
     void removeItem(int serialNumber);
     void modifyItem(int serialNumber, const MenuItem& item);
@@ -127,11 +127,20 @@ void Menu::loadMenu(const string& filename) {
     }
 }
 
-void Menu::showMenu() const {
+void Menu::showMenu(const string& category) const {
     cout << "Menu:\n";
+    bool categoryFound = false;
+
     for (const auto& item : items) {
-        cout << item.serialNumber << " - " << item.category << " - " 
-             << item.description << " - $" << item.price << "\n";
+        if (category.empty() || item.category == category) {
+            cout << item.serialNumber << " - " << item.category << " - " 
+                 << item.description << " - $" << item.price << "\n";
+            categoryFound = true;
+        }
+    }
+
+    if (!category.empty() && !categoryFound) {
+        cout << "No items found for the category: " << category << "\n";
     }
 }
 
@@ -307,14 +316,31 @@ void Restaurant::userInterface() {
     User user;
     int choice;
     while (true) {
-        cout << "1. View Menu\n2. Make Reservation\n3. Exit\nEnter choice: ";
+        cout << "\nUser Options:\n";
+        cout << "1. View Full Menu\n";
+        cout << "2. View Appetizers\n";
+        cout << "3. View Main Course\n";
+        cout << "4. View Desserts\n";
+        cout << "5. View Beverages\n";
+        cout << "6. Make Reservation\n";
+        cout << "7. Exit\n";
+        cout << "Enter choice: ";
         cin >> choice;
+
         if (choice == 1) {
-            user.viewMenu(menu);
+            menu.showMenu();
         } else if (choice == 2) {
+            menu.showMenu("Appetizers");
+        } else if (choice == 3) {
+            menu.showMenu("Main Course");
+        } else if (choice == 4) {
+            menu.showMenu("Desserts");
+        } else if (choice == 5) {
+            menu.showMenu("Beverages");
+        } else if (choice == 6) {
             unordered_set<int> tableAvailability;
             user.makeReservation(reservations, tableAvailability);
-        } else if (choice == 3) {
+        } else if (choice == 7) {
             break;
         }
     }
@@ -369,6 +395,7 @@ int main() {
 
     return 0;
 }
+
 
 //how to run the program 
 // open the terminal and write the following commands 
