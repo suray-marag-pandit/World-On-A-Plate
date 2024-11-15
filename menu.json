@@ -1,0 +1,50 @@
+[
+    {
+        "serialNumber": 1,
+        "category": "Appetizer",
+        "description": "Spring Rolls - Crispy and filled with fresh vegetables",
+        "price": 5.99
+    },
+    {
+        "serialNumber": 2,
+        "category": "Appetizer",
+        "description": "Garlic Bread - Served with a side of marinara sauce",
+        "price": 3.49
+    },
+    {
+        "serialNumber": 3,
+        "category": "Main Course",
+        "description": "Grilled Chicken - Marinated with herbs and spices",
+        "price": 12.99
+    },
+    {
+        "serialNumber": 4,
+        "category": "Main Course",
+        "description": "Pasta Alfredo - Creamy sauce with parmesan cheese",
+        "price": 11.49
+    },
+    {
+        "serialNumber": 5,
+        "category": "Dessert",
+        "description": "Chocolate Cake - Rich and moist with a chocolate ganache",
+        "price": 6.50
+    },
+    {
+        "serialNumber": 6,
+        "category": "Dessert",
+        "description": "Ice Cream Sundae - Vanilla ice cream with chocolate syrup",
+        "price": 4.75
+    },
+    {
+        "serialNumber": 7,
+        "category": "Beverages",
+        "description": "Fresh Lemonade - Made with organic lemons",
+        "price": 2.99
+    },
+    {
+        "serialNumber": 8,
+        "category": "Beverages",
+        "description": "Cappuccino - Freshly brewed with frothed milk",
+        "price": 3.99
+    }
+]
