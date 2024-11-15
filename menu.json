@@ -1,50 +1,670 @@
-[
+ [
     {
         "serialNumber": 1,
-        "category": "Appetizer",
-        "description": "Spring Rolls - Crispy and filled with fresh vegetables",
-        "price": 5.99
+        "category": "Appetizers",
+        "description": "Mozzarella Sticks - Crispy and served with marinara sauce",
+        "price": 5.49
     },
     {
         "serialNumber": 2,
-        "category": "Appetizer",
-        "description": "Garlic Bread - Served with a side of marinara sauce",
-        "price": 3.49
+        "category": "Appetizers",
+        "description": "Spring Rolls - Vegetable-filled, served with sweet chili dip",
+        "price": 4.99
+    },
+    {
+        "serialNumber": 3,
+        "category": "Appetizers",
+        "description": "Chicken Wings - Spicy and tangy, served with blue cheese dip",
+        "price": 6.99
+    },
+    {
+        "serialNumber": 4,
+        "category": "Appetizers",
+        "description": "Garlic Bread - Freshly baked with garlic butter",
+        "price": 3.99
+    },
+    {
+        "serialNumber": 5,
+        "category": "Appetizers",
+        "description": "Stuffed Mushrooms - Filled with cheese and herbs",
+        "price": 5.99
+    },
+    {
+        "serialNumber": 6,
+        "category": "Appetizers",
+        "description": "Nachos - Loaded with cheese, jalapeños, and salsa",
+        "price": 6.49
+    },
+    {
+        "serialNumber": 7,
+        "category": "Appetizers",
+        "description": "Onion Rings - Golden and crispy, served with dipping sauce",
+        "price": 4.49
+    },
+    {
+        "serialNumber": 8,
+        "category": "Appetizers",
+        "description": "Bruschetta - Topped with fresh tomatoes, basil, and olive oil",
+        "price": 4.99
+    },
+    {
+        "serialNumber": 9,
+        "category": "Appetizers",
+        "description": "Mini Meatballs - Tossed in a rich marinara sauce",
+        "price": 5.99
+    },
+    {
+        "serialNumber": 10,
+        "category": "Appetizers",
+        "description": "Potato Skins - Loaded with cheese, bacon, and sour cream",
+        "price": 6.49
+    },
+    {
+        "serialNumber": 11,
+        "category": "Appetizers",
+        "description": "Shrimp Cocktail - Chilled shrimp with tangy cocktail sauce",
+        "price": 7.99
+    },
+    {
+        "serialNumber": 12,
+        "category": "Appetizers",
+        "description": "Buffalo Cauliflower - Spicy and crispy, served with ranch dip",
+        "price": 5.99
+    },
+    {
+        "serialNumber": 13,
+        "category": "Appetizers",
+        "description": "Spinach and Artichoke Dip - Served with warm pita bread",
+        "price": 6.99
+    },
+    {
+        "serialNumber": 14,
+        "category": "Appetizers",
+        "description": "Caprese Skewers - Mozzarella, cherry tomatoes, and basil",
+        "price": 5.49
+    },
+    {
+        "serialNumber": 15,
+        "category": "Appetizers",
+        "description": "Crab Cakes - Served with a zesty remoulade sauce",
+        "price": 8.49
+    },
+    {
+        "serialNumber": 16,
+        "category": "Appetizers",
+        "description": "Cheese Quesadilla - Grilled tortilla with melted cheese",
+        "price": 5.49
+    },
+    {
+        "serialNumber": 17,
+        "category": "Appetizers",
+        "description": "Crispy Calamari - Served with marinara and aioli dips",
+        "price": 7.99
+    },
+    {
+        "serialNumber": 18,
+        "category": "Appetizers",
+        "description": "Deviled Eggs - Classic with a hint of paprika",
+        "price": 4.49
+    },
+    {
+        "serialNumber": 19,
+        "category": "Appetizers",
+        "description": "Mini Tacos - Filled with seasoned beef and fresh toppings",
+        "price": 5.99
+    },
+    {
+        "serialNumber": 20,
+        "category": "Appetizers",
+        "description": "Fried Pickles - Crispy dill pickles served with ranch dip",
+        "price": 4.99
+    },
+    {
+        [
+    {
+        "serialNumber": 1,
+        "category": "Main Course",
+        "description": "Andhra Pradesh - Hyderabadi Biryani: Aromatic rice dish with spices and meat",
+        "price": 12.99
+    },
+    {
+        "serialNumber": 2,
+        "category": "Main Course",
+        "description": "Arunachal Pradesh - Thukpa: Noodle soup with vegetables and chicken",
+        "price": 8.99
     },
     {
         "serialNumber": 3,
         "category": "Main Course",
-        "description": "Grilled Chicken - Marinated with herbs and spices",
-        "price": 12.99
+        "description": "Assam - Assam Laksa: Spicy and tangy fish curry",
+        "price": 9.99
     },
     {
         "serialNumber": 4,
         "category": "Main Course",
-        "description": "Pasta Alfredo - Creamy sauce with parmesan cheese",
-        "price": 11.49
+        "description": "Bihar - Litti Chokha: Roasted wheat balls served with spiced mashed vegetables",
+        "price": 7.49
     },
     {
         "serialNumber": 5,
+        "category": "Main Course",
+        "description": "Chhattisgarh - Chana Samosa: Deep-fried pastry filled with spiced lentils",
+        "price": 6.99
+    },
+    {
+        "serialNumber": 6,
+        "category": "Main Course",
+        "description": "Goa - Goan Fish Curry: Coconut-based curry with fish and spices",
+        "price": 11.99
+    },
+    {
+        "serialNumber": 7,
+        "category": "Main Course",
+        "description": "Gujarat - Dhokla: Steamed fermented rice and chickpea cake",
+        "price": 5.99
+    },
+    {
+        "serialNumber": 8,
+        "category": "Main Course",
+        "description": "Haryana - Bajra Khichdi: Millet and lentil porridge with ghee",
+        "price": 6.49
+    },
+    {
+        "serialNumber": 9,
+        "category": "Main Course",
+        "description": "Himachal Pradesh - Dham: Festive platter with lentils, rice, and curd",
+        "price": 10.49
+    },
+    {
+        "serialNumber": 10,
+        "category": "Main Course",
+        "description": "Jharkhand - Dhuska: Rice and lentil pancakes with spicy curry",
+        "price": 7.99
+    },
+    {
+        "serialNumber": 11,
+        "category": "Main Course",
+        "description": "Karnataka - Bisibele Bath: Spiced rice and lentil dish",
+        "price": 8.49
+    },
+    {
+        "serialNumber": 12,
+        "category": "Main Course",
+        "description": "Kerala - Appam with Stew: Fermented rice pancakes with coconut milk curry",
+        "price": 9.99
+    },
+    {
+        "serialNumber": 13,
+        "category": "Main Course",
+        "description": "Madhya Pradesh - Poha Jalebi: Flattened rice with sweet jalebis",
+        "price": 5.99
+    },
+    {
+        "serialNumber": 14,
+        "category": "Main Course",
+        "description": "Maharashtra - Puran Poli: Sweet stuffed flatbread with lentil filling",
+        "price": 6.99
+    },
+    {
+        "serialNumber": 15,
+        "category": "Main Course",
+        "description": "Manipur - Eromba: Fermented fish and vegetables with chillies",
+        "price": 8.99
+    },
+    {
+        "serialNumber": 16,
+        "category": "Main Course",
+        "description": "Meghalaya - Jadoh: Red rice cooked with pork and spices",
+        "price": 9.49
+    },
+    {
+        "serialNumber": 17,
+        "category": "Main Course",
+        "description": "Mizoram - Bai: Steamed vegetables and pork with bamboo shoots",
+        "price": 8.99
+    },
+    {
+        "serialNumber": 18,
+        "category": "Main Course",
+        "description": "Nagaland - Smoked Pork with Bamboo Shoots: Spicy and flavorful pork dish",
+        "price": 10.99
+    },
+    {
+        "serialNumber": 19,
+        "category": "Main Course",
+        "description": "Odisha - Dalma: Lentil stew with vegetables and coconut",
+        "price": 7.49
+    },
+    {
+        "serialNumber": 20,
+        "category": "Main Course",
+        "description": "Punjab - Butter Chicken: Creamy tomato-based chicken curry",
+        "price": 11.99
+    },
+    {
+        "serialNumber": 21,
+        "category": "Main Course",
+        "description": "Rajasthan - Dal Baati Churma: Baked wheat balls with lentils and sweet crumble",
+        "price": 10.99
+    },
+    {
+        "serialNumber": 22,
+        "category": "Main Course",
+        "description": "Sikkim - Momos: Steamed dumplings filled with vegetables or meat",
+        "price": 6.49
+    },
+    {
+        "serialNumber": 23,
+        "category": "Main Course",
+        "description": "Tamil Nadu - Chettinad Chicken: Spicy chicken curry with South Indian spices",
+        "price": 12.49
+    },
+    {
+        "serialNumber": 24,
+        "category": "Main Course",
+        "description": "Telangana - Sarva Pindi: Spiced rice flour pancake with peanuts",
+        "price": 7.49
+    },
+    {
+        "serialNumber": 25,
+        "category": "Main Course",
+        "description": "Tripura - Mui Borok: Traditional fish stew with bamboo shoots",
+        "price": 8.99
+    },
+    {
+        "serialNumber": 26,
+        "category": "Main Course",
+        "description": "Uttar Pradesh - Awadhi Biryani: Aromatic layered rice with meat or vegetables",
+        "price": 11.99
+    },
+    {
+        "serialNumber": 27,
+        "category": "Main Course",
+        "description": "Uttarakhand - Kafuli: Spinach and fenugreek curry with rice",
+        "price": 8.49
+    },
+    {
+        "serialNumber": 28,
+        "category": "Main Course",
+        "description": "West Bengal - Kosha Mangsho: Spicy mutton curry with thick gravy",
+        "price": 12.99
+    
+    },
+    {
+        "serialNumber": 29,
+        "category": "Main Course",
+        "description": "Italy - Margherita Pizza: Thin crust with tomato, mozzarella, and basil",
+        "price": 10.99
+    },
+    {
+        "serialNumber": 30,
+        "category": "Main Course",
+        "description": "Japan - Ramen: Savory noodle soup with pork, egg, and scallions",
+        "price": 12.49
+    },
+    {
+        "serialNumber": 31,
+        "category": "Main Course",
+        "description": "Mexico - Tacos: Corn tortillas filled with seasoned meat and fresh toppings",
+        "price": 8.99
+    },
+    {
+        "serialNumber": 32,
+        "category": "Main Course",
+        "description": "India - Butter Chicken: Creamy tomato-based chicken curry",
+        "price": 13.49
+    },
+    {
+        "serialNumber": 33,
+        "category": "Main Course",
+        "description": "Delhi - Chole Bhature: Spiced chickpea curry with fluffy fried bread",
+        "price": 9.49
+    },
+        [
+    {
+        "serialNumber": 34,
+        "category": "Dessert",
+        "description": "Andhra Pradesh - Pootharekulu: Thin rice paper sweets with sugar and ghee",
+        "price": 6.99
+    },
+    {
+        "serialNumber": 35,
+        "category": "Dessert",
+        "description": "Arunachal Pradesh - Khapse: Fried biscuit-like dessert",
+        "price": 5.49
+    },
+    {
+        "serialNumber": 36,
+        "category": "Dessert",
+        "description": "Assam - Pitha: Rice cake with jaggery and sesame filling",
+        "price": 5.99
+    },
+    {
+        "serialNumber": 37,
+        "category": "Dessert",
+        "description": "Bihar - Thekua: Deep-fried wheat cookies with jaggery",
+        "price": 4.99
+    },
+    {
+        "serialNumber": 38,
+        "category": "Dessert",
+        "description": "Chhattisgarh - Dehrori: Fermented rice dumplings soaked in syrup",
+        "price": 6.49
+    },
+    {
+        "serialNumber": 39,
+        "category": "Dessert",
+        "description": "Goa - Bebinca: Multi-layered coconut milk pudding",
+        "price": 7.49
+    },
+    {
+        "serialNumber": 40,
+        "category": "Dessert",
+        "description": "Gujarat - Basundi: Sweetened thickened milk flavored with cardamom",
+        "price": 6.99
+    },
+    {
+        "serialNumber": 41,
+        "category": "Dessert",
+        "description": "Haryana - Gajar Ka Halwa: Carrot pudding with ghee, milk, and sugar",
+        "price": 5.99
+    },
+    {
+        "serialNumber": 42,
+        "category": "Dessert",
+        "description": "Himachal Pradesh - Mittha: Sweetened rice with dry fruits",
+        "price": 6.49
+    },
+    {
+        "serialNumber": 43,
+        "category": "Dessert",
+        "description": "Jharkhand - Malpua: Deep-fried pancake soaked in syrup",
+        "price": 5.99
+    },
+    {
+        "serialNumber": 44,
+        "category": "Dessert",
+        "description": "Karnataka - Mysore Pak: Ghee-based sweet made from gram flour and sugar",
+        "price": 6.49
+    },
+    {
+        "serialNumber": 45,
+        "category": "Dessert",
+        "description": "Kerala - Ada Pradhaman: Sweet rice pudding made with coconut milk and jaggery",
+        "price": 7.99
+    },
+    {
+        "serialNumber": 46,
+        "category": "Dessert",
+        "description": "Madhya Pradesh - Mawa Bati: Sweet fried dumplings filled with mawa and nuts",
+        "price": 6.99
+    },
+    {
+        "serialNumber": 47,
+        "category": "Dessert",
+        "description": "Maharashtra - Modak: Steamed or fried dumplings filled with coconut and jaggery",
+        "price": 7.49
+    },
+    {
+        "serialNumber": 48,
+        "category": "Dessert",
+        "description": "Manipur - Chakhao Kheer: Black rice pudding with milk and sugar",
+        "price": 6.99
+    },
+    {
+        "serialNumber": 49,
+        "category": "Dessert",
+        "description": "Meghalaya - Pukhlein: Rice flour pancakes sweetened with jaggery",
+        "price": 5.49
+    },
+    {
+        "serialNumber": 50,
+        "category": "Dessert",
+        "description": "Mizoram - Koat Pitha: Fried banana fritters with rice flour and jaggery",
+        "price": 5.99
+    },
+    {
+        "serialNumber": 51,
+        "category": "Dessert",
+        "description": "Nagaland - Galho Sweet: Rice dessert made with local herbs and jaggery",
+        "price": 6.49
+    },
+    {
+        "serialNumber": 52,
+        "category": "Dessert",
+        "description": "Odisha - Chhena Poda: Baked ricotta-like cheese with sugar and cardamom",
+        "price": 6.99
+    },
+    {
+        "serialNumber": 53,
+        "category": "Dessert",
+        "description": "Punjab - Jalebi: Crispy deep-fried spirals soaked in syrup",
+        "price": 4.99
+    }
+]
+
+    {
+        "serialNumber": 54,
         "category": "Dessert",
         "description": "Chocolate Cake - Rich and moist with a chocolate ganache",
         "price": 6.50
     },
     {
-        "serialNumber": 6,
+        "serialNumber": 55,
         "category": "Dessert",
         "description": "Ice Cream Sundae - Vanilla ice cream with chocolate syrup",
         "price": 4.75
     },
+[
     {
-        "serialNumber": 7,
+        "serialNumber": 56,
         "category": "Beverages",
-        "description": "Fresh Lemonade - Made with organic lemons",
+        "description": "Masala Chai: Spiced tea brewed with black tea, milk, ginger, cardamom, and cinnamon",
+        "price": 2.49
+    },
+    {
+        "serialNumber": 57,
+        "category": "Beverages",
+        "description": "Nimbu Pani: Refreshing lemonade with sugar, salt, and a hint of cumin",
+        "price": 1.99
+    },
+    {
+        "serialNumber": 58,
+        "category": "Beverages",
+        "description": "Lassi: Yogurt-based drink, served sweet or salty, with spices or fruits",
+        "price": 3.49
+    },
+    {
+        "serialNumber": 59,
+        "category": "Beverages",
+        "description": "Jaljeera: Spiced cumin water with mint, tamarind, and black salt",
+        "price": 2.49
+    },
+    {
+        "serialNumber": 60,
+        "category": "Beverages",
+        "description": "Buttermilk (Chaas): Spicy yogurt drink with cumin, coriander, and mint",
+        "price": 1.99
+    },
+    {
+        "serialNumber": 61,
+        "category": "Beverages",
+        "description": "Thandai: Milk drink flavored with almonds, saffron, rosewater, and a blend of spices",
+        "price": 4.99
+    },
+    {
+        "serialNumber": 62,
+        "category": "Beverages",
+        "description": "Sugarcane Juice: Freshly pressed sugarcane juice served with a pinch of lime and ginger",
+        "price": 3.49
+    },
+    {
+        "serialNumber": 63,
+        "category": "Beverages",
+        "description": "Tea (Kashmiri Noon Chai): Salty pink tea made with green tea leaves, milk, and baking soda",
+        "price": 3.99
+    },
+    {
+        "serialNumber": 64,
+        "category": "Beverages",
+        "description": "Falooda: Sweet, colorful drink with rose syrup, milk, and basil seeds, topped with ice cream",
+        "price": 4.49
+    },
+    {
+        "serialNumber": 65,
+        "category": "Beverages",
+        "description": "Coconut Water: Freshly served coconut water, naturally refreshing and hydrating",
+        "price": 2.99
+    }[
+    {
+        "serialNumber": 56,
+        "category": "Beverages",
+        "description": "Masala Chai: Spiced tea brewed with black tea, milk, ginger, cardamom, and cinnamon",
+        "price": 2.49
+    },
+    {
+        "serialNumber": 57,
+        "category": "Beverages",
+        "description": "Nimbu Pani: Refreshing lemonade with sugar, salt, and a hint of cumin",
+        "price": 1.99
+    },
+    {
+        "serialNumber": 58,
+        "category": "Beverages",
+        "description": "Lassi: Yogurt-based drink, served sweet or salty, with spices or fruits",
+        "price": 3.49
+    },
+    {
+        "serialNumber": 59,
+        "category": "Beverages",
+        "description": "Jaljeera: Spiced cumin water with mint, tamarind, and black salt",
+        "price": 2.49
+    },
+    {
+        "serialNumber": 60,
+        "category": "Beverages",
+        "description": "Buttermilk (Chaas): Spicy yogurt drink with cumin, coriander, and mint",
+        "price": 1.99
+    },
+    {
+        "serialNumber": 61,
+        "category": "Beverages",
+        "description": "Thandai: Milk drink flavored with almonds, saffron, rosewater, and a blend of spices",
+        "price": 4.99
+    },
+    {
+        "serialNumber": 62,
+        "category": "Beverages",
+        "description": "Sugarcane Juice: Freshly pressed sugarcane juice served with a pinch of lime and ginger",
+        "price": 3.49
+    },
+    {
+        "serialNumber": 63,
+        "category": "Beverages",
+        "description": "Tea (Kashmiri Noon Chai): Salty pink tea made with green tea leaves, milk, and baking soda",
+        "price": 3.99
+    },
+    {
+        "serialNumber": 64,
+        "category": "Beverages",
+        "description": "Falooda: Sweet, colorful drink with rose syrup, milk, and basil seeds, topped with ice cream",
+        "price": 4.49
+    },
+    {
+        "serialNumber": 65,
+        "category": "Beverages",
+        "description": "Coconut Water: Freshly served coconut water, naturally refreshing and hydrating",
+        "price": 2.99
+    }
+        [
+    {
+        "serialNumber": 56,
+        "category": "Beverages",
+        "description": "Masala Chai: Spiced tea brewed with black tea, milk, ginger, cardamom, and cinnamon",
+        "price": 2.49
+    },
+    {
+        "serialNumber": 57,
+        "category": "Beverages",
+        "description": "Nimbu Pani: Refreshing lemonade with sugar, salt, and a hint of cumin",
+        "price": 1.99
+    },
+    {
+        "serialNumber": 58,
+        "category": "Beverages",
+        "description": "Lassi: Yogurt-based drink, served sweet or salty, with spices or fruits",
+        "price": 3.49
+    },
+    {
+        "serialNumber": 59,
+        "category": "Beverages",
+        "description": "Jaljeera: Spiced cumin water with mint, tamarind, and black salt",
+        "price": 2.49
+    },
+    {
+        "serialNumber": 60,
+        "category": "Beverages",
+        "description": "Buttermilk (Chaas): Spicy yogurt drink with cumin, coriander, and mint",
+        "price": 1.99
+    },
+    {
+        "serialNumber": 61,
+        "category": "Beverages",
+        "description": "Thandai: Milk drink flavored with almonds, saffron, rosewater, and a blend of spices",
+        "price": 4.99
+    },
+    {
+        "serialNumber": 62,
+        "category": "Beverages",
+        "description": "Sugarcane Juice: Freshly pressed sugarcane juice served with a pinch of lime and ginger",
+        "price": 3.49
+    },
+    {
+        "serialNumber": 63,
+        "category": "Beverages",
+        "description": "Tea (Kashmiri Noon Chai): Salty pink tea made with green tea leaves, milk, and baking soda",
+        "price": 3.99
+    },
+    {
+        "serialNumber": 64,
+        "category": "Beverages",
+        "description": "Falooda: Sweet, colorful drink with rose syrup, milk, and basil seeds, topped with ice cream",
+        "price": 4.49
+    },
+    {
+        "serialNumber": 65,
+        "category": "Beverages",
+        "description": "Coconut Water: Freshly served coconut water, naturally refreshing and hydrating",
         "price": 2.99
     },
     {
-        "serialNumber": 8,
+        "serialNumber": 66,
         "category": "Beverages",
-        "description": "Cappuccino - Freshly brewed with frothed milk",
+        "description": "Kashmiri Kahwa: Traditional green tea with saffron, almonds, and cardamom",
+        "price": 4.49
+    },
+    {
+        "serialNumber": 67,
+        "category": "Beverages",
+        "description": "Kashmiri Noon Chai: Salty pink tea made with green tea, milk, and baking soda, garnished with crushed almonds",
         "price": 3.99
-    }
+    },
+    {
+        "serialNumber": 68,
+        "category": "Beverages",
+        "description": "Kashmiri Pashmina Chai: A unique blend of green tea leaves, milk, saffron, and spices, served with crushed walnuts",
+        "price": 5.49
+    },
+    {
+        "serialNumber": 69,
+        "category": "Beverages",
+        "description": "Kashmiri Sheer Chai: A milky tea brewed with a mixture of green tea leaves, milk, and a pinch of salt, known for its pink color",
+        "price": 3.79
+    },
+    {
+        "serialNumber": 70,
+        "category": "Beverages",
+        "description": "Kashmiri Phirni: Rice pudding drink flavored with cardamom and saffron, chilled for a refreshing taste",
+        "price": 4.99
+    },
 ]
