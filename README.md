@@ -31,7 +31,7 @@ This is a simple restaurant management system that allows both users and admins 
 1. Clone the repository:
 
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/suray-marag-pandit/World-On-A-Plate.git
     cd World-On-A-Plate
     ```
 
@@ -49,7 +49,7 @@ This is a simple restaurant management system that allows both users and admins 
     ```bash
     ./restaurant
     ```
-    
+
     ```./WorldOnAPlate```
 
 ## File Structure
