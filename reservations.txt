@@ -1,1 +1,2 @@
-suray 1
+suray 1 -1
+naman 2 3 4 -1

@@ -6,7 +6,6 @@
 #include <fstream>
 #include <rapidjson/document.h>
 #include <rapidjson/filereadstream.h>
-#include "rapidjson/writer.h"
 #include <algorithm>
 
 using namespace std;
@@ -55,7 +54,6 @@ public:
     void updateInventory(const string& material, int quantity);
 };
 
-// Admin class
 class Admin {
     string password = "admin123";
     Inventory inventory;
@@ -67,9 +65,7 @@ public:
     void viewReservations(const vector<Reservation>& reservations);
 };
 
-// User class
 class User {
-    string name;
 public:
     void viewMenu(const Menu& menu);
     Order placeOrder(Menu& menu, int& chefCounter);
@@ -82,6 +78,7 @@ class Restaurant {
     vector<Reservation> reservations;
     Admin admin;
     vector<Order> orders;
+    unordered_set<int> tableAvailability; // Keeps track of reserved tables
     int chefCounter = 0; // Round-robin chef allocation
 public:
     Restaurant(const string& restaurantName) : name(restaurantName) {}
@@ -276,7 +273,12 @@ void User::makeReservation(vector<Reservation>& reservations, unordered_set<int>
             cout << "Table " << table << " is already reserved!\n";
         }
     }
-    reservations.push_back(res);
+    if (!res.tableNumbers.empty()) {
+        reservations.push_back(res);
+        cout << "Reservation successful for " << res.name << "!\n";
+    } else {
+        cout << "No tables reserved. Reservation cancelled.\n";
+    }
 }
 
 void Restaurant::loadMenu(const string& filename) {
@@ -296,6 +298,7 @@ void Restaurant::loadReservationsFromFile() {
         int table;
         while (file >> table && table != -1) {
             res.tableNumbers.push_back(table);
+            tableAvailability.insert(table);
         }
         reservations.push_back(res);
     }
@@ -315,35 +318,28 @@ void Restaurant::saveReservationsToFile() {
 void Restaurant::userInterface() {
     User user;
     int choice;
-    while (true) {
-        cout << "\nUser Options:\n";
-        cout << "1. View Full Menu\n";
-        cout << "2. View Appetizers\n";
-        cout << "3. View Main Course\n";
-        cout << "4. View Desserts\n";
-        cout << "5. View Beverages\n";
-        cout << "6. Make Reservation\n";
-        cout << "7. Exit\n";
-        cout << "Enter choice: ";
+    do {
+        cout << "1. View Menu\n2. Place Order\n3. Make Reservation\n0. Exit\nEnter choice: ";
         cin >> choice;
-
-        if (choice == 1) {
-            menu.showMenu();
-        } else if (choice == 2) {
-            menu.showMenu("Appetizers");
-        } else if (choice == 3) {
-            menu.showMenu("Main Course");
-        } else if (choice == 4) {
-            menu.showMenu("Desserts");
-        } else if (choice == 5) {
-            menu.showMenu("Beverages");
-        } else if (choice == 6) {
-            unordered_set<int> tableAvailability;
-            user.makeReservation(reservations, tableAvailability);
-        } else if (choice == 7) {
-            break;
+        switch (choice) {
+            case 1:
+                user.viewMenu(menu);
+                break;
+            case 2: {
+                Order order = user.placeOrder(menu, chefCounter);
+                orders.push_back(order);
+                break;
+            }
+            case 3:
+                user.makeReservation(reservations, tableAvailability);
+                break;
+            case 0:
+                saveReservationsToFile();
+                break;
+            default:
+                cout << "Invalid choice!\n";
         }
-    }
+    } while (choice != 0);
 }
 
 void Restaurant::adminInterface() {
@@ -352,49 +348,56 @@ void Restaurant::adminInterface() {
         return;
     }
     int choice;
-    while (true) {
-        cout << "1. Manage Inventory\n2. Manage Menu\n3. View Statistics\n4. View Reservations\n5. Exit\nEnter choice: ";
+    do {
+        cout << "1. Manage Inventory\n2. Manage Menu\n3. View Statistics\n4. View Reservations\n0. Exit\nEnter choice: ";
         cin >> choice;
-        if (choice == 1) {
-            admin.manageInventory();
-        } else if (choice == 2) {
-            admin.manageMenu(menu);
-        } else if (choice == 3) {
-            admin.viewStatistics(menu);
-        } else if (choice == 4) {
-            admin.viewReservations(reservations);
-        } else if (choice == 5) {
-            break;
+        switch (choice) {
+            case 1:
+                admin.manageInventory();
+                break;
+            case 2:
+                admin.manageMenu(menu);
+                break;
+            case 3:
+                admin.viewStatistics(menu);
+                break;
+            case 4:
+                admin.viewReservations(reservations);
+                break;
+            case 0:
+                saveReservationsToFile();
+                break;
+            default:
+                cout << "Invalid choice!\n";
         }
-    }
+    } while (choice != 0);
 }
 
 int main() {
-    Restaurant restaurant("World On A Plate");
-
-    // Load menu and previous reservations
+    Restaurant restaurant("The Gourmet Spot");
     restaurant.loadMenu("menu.json");
     restaurant.loadReservationsFromFile();
-
-    // User/Admin interface
     int choice;
-    while (true) {
-        cout << "1. User Interface\n2. Admin Interface\n3. Exit\nEnter choice: ";
+    do {
+        cout << "1. User Interface\n2. Admin Interface\n0. Exit\nEnter choice: ";
         cin >> choice;
-        if (choice == 1) {
-            restaurant.userInterface();
-        } else if (choice == 2) {
-            restaurant.adminInterface();
-        } else {
-            break;
+        switch (choice) {
+            case 1:
+                restaurant.userInterface();
+                break;
+            case 2:
+                restaurant.adminInterface();
+                break;
+            case 0:
+                cout << "Goodbye!\n";
+                break;
+            default:
+                cout << "Invalid choice!\n";
         }
-    }
-
-    // Save reservations
-    restaurant.saveReservationsToFile();
-
+    } while (choice != 0);
     return 0;
 }
+
 
 
 //how to run the program 
