@@ -1,0 +1,83 @@
+[
+    {
+        "_id":"1",
+        "_name":"Mozzarella Sticks",
+        "_ingredients":{
+            "_Mozzarella Cheese_":"200g",
+            "_Breadcrumbs_":"100g",
+            "_Marinara Sauce_":"50g"
+        }
+    },
+    {
+        "_id":"2",
+        "_name":"Spring Rolls",
+        "_ingredients":{
+            "_Spring Roll Wrappers_":"10 pieces",
+            "_Mixed Vegetables_":"150g",
+            "_Sweet Chili Sauce_":"30g"
+        }
+    },
+    {
+         "_id":"3",
+         "_name":"Chicken Wings",
+         "_ingredients":{
+             "_Chicken Wings_":"500g",
+             "_Buffalo Sauce_":"100g",
+             "_Blue Cheese Dressing_":"50g"
+         }
+     },
+     {
+         "_id":"4",
+         "_name":"Garlic Bread",
+         "_ingredients":{
+             "_Baguette_":"1 piece",
+             "_Garlic Butter_":"50g"
+         }
+     },
+     {
+         "_id":"5",
+         "_name":"Stuffed Mushrooms",
+         "_ingredients":{
+             "_Mushrooms_":"300g",
+             "_Cream Cheese_":"100g",
+             "_Herbs_":"20g"
+         }
+     },
+     {
+         "_id":"6",
+         "_name":"Nachos",
+         "_ingredients":{
+             "_Tortilla Chips_":"200g",
+             "_Cheese Sauce_":"150g",
+             "_Jalapeños_":"50g",
+             "_Salsa_":"50g"
+         }
+     },
+     {
+         "_id":"7",
+         "_name":"Onion Rings",
+         "_ingredients":{
+             "_Onions_":"200g",
+             "_Batter Mix_":"100g"
+         }
+     },
+     {
+         "_id":"8",
+         "_name":"Bruschetta",
+         "_ingredients":{
+             "_Tomatoes_":"150g",
+             "_Basil Leaves_":"20g",
+             "_Olive Oil_":"30g",
+             "_Bread Slices_":"5 pieces"
+         }
+     },
+     {
+         "_id ":"9 ",
+         "_name ":"Mini Meatballs ",
+         "_ingredients ":{
+            "__Ground Beef__ ":"300g ",
+            "__Breadcrumbs__ ":"100g ",
+            "__Marinara Sauce__ ":"100g "
+          }
+       }
+]
