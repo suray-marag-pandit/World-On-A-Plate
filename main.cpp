@@ -400,6 +400,27 @@ Order User::placeOrder(Menu& menu, Inventory& inventory, int& chefCounter) {
 	cout << "Order placed with Chef ID: " << order.chefId << "\n"; 
 	return order; 
 }
+// Show billing details
+    cout << "\n----- Billing Details -----\n";
+    for (const auto& item : order.items) {
+        cout << item.name << " x 1 : Rs " << item.price << "\n";
+    }
+    cout << "----------------------------\n";
+    cout << "Total Cost: Rs " << order.totalCost << "\n";
+
+    // Check and apply offer
+    if (order.totalCost > 1000) {
+        double discount = order.totalCost * 0.02;
+        double discountedTotal = order.totalCost - discount;
+        cout << "Congratulations! You are eligible for a 2% discount.\n";
+        cout << "Discount: Rs " << discount << "\n";
+        cout << "Discounted Total: Rs " << discountedTotal << "\n";
+        order.totalCost = discountedTotal;
+    }
+
+    cout << "Order placed with Chef ID: " << order.chefId << "\n";
+    return order;
+}
 
 void User::makeReservation(vector<Reservation>& reservations, unordered_set<int>& tableAvailability) { 
 	Reservation res; 
