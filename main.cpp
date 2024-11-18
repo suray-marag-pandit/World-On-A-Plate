@@ -398,6 +398,21 @@ Order User::placeOrder(Menu& menu, Inventory& inventory, int& chefCounter) {
 	chefCounter++; 
 
 	cout << "Order placed with Chef ID: " << order.chefId << "\n"; 
+    cout << "\n----- Billing Details -----\n";
+
+    if (order.totalCost > 11) {
+        double discount = order.totalCost * 0.09;
+        double discountedTotal = order.totalCost - discount;
+        cout << "Congratulations! You are eligible for a 2% discount.\n";
+        cout << "Discount: Rs " << discount << "\n";
+        cout << "Discounted Total: Rs " << discountedTotal << "\n";
+        order.totalCost = discountedTotal;
+        cout<<"Your total would be: "<<order.totalCost<<endl;
+    }
+    else{
+        cout<<"Your total would be: "<<order.totalCost<<endl;
+    }
+
 	return order; 
 }
 
