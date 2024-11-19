@@ -348,7 +348,7 @@ void Admin::viewReservations(const vector<Reservation>& reservations) {
 
 void User::viewMenu(const Menu& menu) { 
 	int choice; 
-	cout<<"1. View Appetizers\n2. View Main Course\n3. View Desserts\n4. View Beverages\n5. View Full Menu\n0. Exit\nEnter choice: "; 
+	cout<<"1. View Appetizers\n2. View Main Course\n3. View Desserts\n4. View Beverages\n5. Nourishing Meals \n6. View Full Menu\n0. Exit\nEnter choice: "; 
 	cin>>choice; 
 
 	switch(choice){ 
@@ -365,6 +365,9 @@ void User::viewMenu(const Menu& menu) {
 			menu.showMenu("Beverages"); 
 			break; 
 		case 5: 
+			menu.showMenu("Nourishing Meals"); 
+			break; 
+		case 6: 
 			menu.showMenu(); // Show full menu without filtering by category.
 			break; 
 		case 0: 
@@ -398,6 +401,21 @@ Order User::placeOrder(Menu& menu, Inventory& inventory, int& chefCounter) {
 	chefCounter++; 
 
 	cout << "Order placed with Chef ID: " << order.chefId << "\n"; 
+    cout << "\n----- Billing Details -----\n";
+
+    if (order.totalCost > 11) {
+        double discount = order.totalCost * 0.09;
+        double discountedTotal = order.totalCost - discount;
+        cout << "Congratulations! You are eligible for a 2% discount.\n";
+        cout << "Discount: Rs " << discount << "\n";
+        cout << "Discounted Total: Rs " << discountedTotal << "\n";
+        order.totalCost = discountedTotal;
+        cout<<"Your total would be: "<<order.totalCost<<endl;
+    }
+    else{
+        cout<<"Your total would be: "<<order.totalCost<<endl;
+    }
+
 	return order; 
 }
 // Show billing details
@@ -435,7 +453,7 @@ void User::makeReservation(vector<Reservation>& reservations, unordered_set<int>
 	} 
 
 	cout<<"\nEnter name for reservation: ";  
-	cin>>res.name;  
+	cin>>res.name;
 
 	cout<<"Enter table numbers (separate by space, end with 0): ";  
 	while(cin>>table && table!=0){  
@@ -505,10 +523,7 @@ void Restaurant::userInterface() {
 	    cin>>choice;  
 
 	    switch(choice){  
-	        case 1: user.viewMenu(menu); break; // Show appetizers.
-	        // case 2: user.viewMenu(menu); break; // Show main courses.
-	        // case 3: user.viewMenu(menu); break; // Show desserts.
-	        // case 4: user.viewMenu(menu); break; // Show beverages.
+	        case 1: user.viewMenu(menu); break; // Show menu.
 	        case 2: { Order order = user.placeOrder(menu, admin.getInventory(), chefCounter); orders.push_back(order); break;} // Place order.
 	        case 3: user.makeReservation(reservations, tableAvailability); break;// Make a reservation.
             case 4: cancelReservation(reservations, tableAvailability); break;// Cancel a reservation.
