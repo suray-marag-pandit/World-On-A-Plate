@@ -196,7 +196,7 @@ void Menu::showMenu(const string& category) const {
    
    if (category.empty()) { 
        for (const auto& item : items) { 
-           cout << item.serialNumber << " - " << item.category << " - " << item.description << " - $" << item.price << "\n"; 
+           cout << item.serialNumber << " - " << item.category << " - " << item.description << " - Rs. " << item.price << "\n"; 
        } 
        return; 
    }
@@ -205,7 +205,7 @@ void Menu::showMenu(const string& category) const {
 
    for (const auto& item : items) {
        if (item.category == category || category == "All") { // Show all items if category is "All"
-           cout << item.serialNumber << " - " << item.category << " - " << item.description << " - $" << item.price << "\n";
+           cout << item.serialNumber << " - " << item.category << " - " << item.description << " - Rs. " << item.price << "\n";
            categoryFound = true;
        }
    }
@@ -403,10 +403,19 @@ Order User::placeOrder(Menu& menu, Inventory& inventory, int& chefCounter) {
 	cout << "Order placed with Chef ID: " << order.chefId << "\n"; 
     cout << "\n----- Billing Details -----\n";
 
-    if (order.totalCost > 11) {
+    if (order.totalCost > 1500 && order.totalCost < 5000) {
         double discount = order.totalCost * 0.09;
         double discountedTotal = order.totalCost - discount;
-        cout << "Congratulations! You are eligible for a 2% discount.\n";
+        cout << "Congratulations! You are eligible for a 9% discount.\n";
+        cout << "Discount: Rs " << discount << "\n";
+        cout << "Discounted Total: Rs " << discountedTotal << "\n";
+        order.totalCost = discountedTotal;
+        cout<<"Your total would be: "<<order.totalCost<<endl;
+    }
+    else if (order.totalCost > 5000) {
+        double discount = order.totalCost * 0.12;
+        double discountedTotal = order.totalCost - discount;
+        cout << "Congratulations! You are eligible for a 12% discount.\n";
         cout << "Discount: Rs " << discount << "\n";
         cout << "Discounted Total: Rs " << discountedTotal << "\n";
         order.totalCost = discountedTotal;
