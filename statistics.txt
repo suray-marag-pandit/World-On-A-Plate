@@ -1,0 +1,79 @@
+1:
+Times: 12:10 13:8 19:5
+Weekdays: Monday:15 Friday:8
+
+2:
+Times: 11:6 14:12 20:7
+Weekdays: Tuesday:9 Saturday:10
+
+3:
+Times: 15:8 18:14 21:9
+Weekdays: Wednesday:12 Sunday:10
+
+4:
+Times: 10:4 13:6 17:3
+Weekdays: Monday:7 Thursday:5
+
+5:
+Times: 14:5 15:8 19:9
+Weekdays: Friday:8 Sunday:7
+
+6:
+Times: 11:8 12:7 16:10
+Weekdays: Tuesday:9 Saturday:12
+
+7:
+Times: 12:6 18:7 20:4
+Weekdays: Wednesday:5 Friday:6
+
+8:
+Times: 9:5 12:9 13:7
+Weekdays: Monday:6 Thursday:8
+
+9:
+Times: 14:6 15:5 19:4
+Weekdays: Tuesday:5 Saturday:7
+
+10:
+Times: 10:4 14:8 18:6
+Weekdays: Thursday:7 Sunday:6
+
+11:
+Times: 11:8 13:10 20:9
+Weekdays: Monday:11 Friday:8
+
+12:
+Times: 12:4 15:6 18:7
+Weekdays: Wednesday:8 Sunday:7
+
+13:
+Times: 14:5 16:7 19:8
+Weekdays: Friday:9 Saturday:10
+
+14:
+Times: 10:3 13:5 18:4
+Weekdays: Monday:6 Thursday:5
+
+15:
+Times: 11:7 15:8 19:9
+Weekdays: Tuesday:8 Sunday:9
+
+16:
+Times: 12:9 14:8 18:10
+Weekdays: Friday:10 Saturday:11
+
+17:
+Times: 9:3 13:6 16:4
+Weekdays: Monday:5 Wednesday:7
+
+18:
+Times: 10:5 12:6 15:7
+Weekdays: Tuesday:6 Thursday:8
+
+19:
+Times: 13:8 16:7 19:6
+Weekdays: Friday:9 Sunday:7
+
+20:
+Times: 12:6 14:9 18:8
+Weekdays: Wednesday:8 Saturday:9
