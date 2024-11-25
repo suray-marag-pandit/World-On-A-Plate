@@ -750,6 +750,7 @@ void Restaurant::userInterface()
                 salesStatistics[item.serialNumber].weekdayCount[weekday]++;
             }
 
+
             break;
         } // Place order.
         case 3:
@@ -766,6 +767,7 @@ void Restaurant::userInterface()
         }
     } while (choice != 0);
 }
+
 void Restaurant::adminInterface()
 {
     if (!admin.login())
