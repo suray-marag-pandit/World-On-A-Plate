@@ -209,6 +209,7 @@ void Menu::loadMenu(const string &filename)
         return;
     }
 
+    
     char readBuffer[65536];
     FileReadStream is(fp, readBuffer, sizeof(readBuffer));
 
