@@ -563,6 +563,5 @@ int main() {
 
 // how to run the program
 //  open the terminal and write the following commands
-
 // g++ -I./rapidjson/include main.cpp -o WorldOnAPlate
 // ./WorldOnAPlate
